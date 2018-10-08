@@ -1,0 +1,8 @@
+* { font-family: monospace, Arial; }
+body { color: black; }
+
+#p-element {
+    width: auto;
+    height: auto;
+}
+
