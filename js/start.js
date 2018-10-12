@@ -13,9 +13,9 @@ function addPicture() {
 }
 
 function myLoadFunction() {
-    let element = document.getElementsByClassName("item-link")
-    for(var x in element) {
-        element[x].addEventListener('click', function() {alert(`You clicked a link "${this.text}"`)})
-    }
-
+	let elements = Array.prototype.slice.call(document.getElementsByClassName("item-link"))
+        
+	elements.forEach((element) => {
+		element.addEventListener('click', () => {alert(`You clicked a link "${element.text}"`)})
+	});
 }
